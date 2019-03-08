@@ -30,7 +30,23 @@ int main(int argc, char* argv[]){
 	}
 	array = createArray(arraySize);
     }
+    else if(strcmp(argv[i], "set_find_parameters") == 0){
+	printf("Setting \"find\" parameters\n");
+	if(i + 2 >= argc){
+	  printf("%s%s%s", "Incorrect argument in main, expected two strings after: ", argv[i], "\n");
+	  return -1;
+	}
+	char directory[128];
+	char filename[128];
+	if(sscanf(argv[++i], "%s", directory) == EOF || sscanf(argv[++i], "%s", filename) == EOF){
+	  printf("Incorrect arguments after \"set_find_parameters\", expected two strings: directory and filename\n");
+	  return -1;
+	}
+	setSearchingParameters(directory, filename);
+    }
   }
+      
+	
      
     
   return 0;
