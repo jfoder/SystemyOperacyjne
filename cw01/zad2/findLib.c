@@ -1,7 +1,7 @@
 #include "findLib.h"
 
-char *directory;
-char *filename;
+char directory[128];
+char filename[128];
 
 struct blocksArray *createArray(int size) {
     if (size <= 1) {
@@ -26,8 +26,8 @@ void setSearchingParameters(char *directoryToSearch, char *filenameToFind) {
     if (!(directoryToSearch && filenameToFind)) {
         printf("Both directory and file names cannot be empty\n");
     }
-    directory = directoryToSearch;
-    filename = filenameToFind;
+    strcpy(directory, directoryToSearch);
+    strcpy(filename, filenameToFind);
 }
 
 void search(char *tmpFile) {
