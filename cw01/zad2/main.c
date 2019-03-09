@@ -79,7 +79,6 @@ int main(int argc, char* argv[]){
       struct tms usTimeBegin;
       clock_gettime(CLOCK_REALTIME, &realTimeBegin);
       times(&usTimeBegin);
-      printf("%s%ld %ld%s", "Time: ", (long int)usTimeBegin.tms_stime, (long int)usTimeBegin.tms_utime, "\n");
       printf("Searching directory\n");
       if(parametersPassed == 0){
 	printf("You have to set find parameters before searching directory\n");
@@ -103,7 +102,6 @@ int main(int argc, char* argv[]){
       realTime.tv_nsec += realTimeEnd.tv_nsec - realTimeBegin.tv_nsec;
       usTime.tms_cutime += usTimeEnd.tms_cutime - usTimeBegin.tms_cutime;
       usTime.tms_cstime += usTimeEnd.tms_cstime - usTimeBegin.tms_cstime;
-      printf("%s%d %d%s", "Time: ", (int)usTimeEnd.tms_stime, (int)usTimeEnd.tms_utime, "\n");
     }
     else if(strcmp(argv[i], "allocate_memory") == 0){
       struct timespec realTimeBegin;
