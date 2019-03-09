@@ -61,6 +61,43 @@ int main(int argc, char* argv[]){
 	}
 	search(tmpFilename);
     }
+    else if(strcmp(argv[i], "allocate_memory") == 0){
+      printf("Allocating block of memory\n");
+      if(array == NULL){
+	printf("Array has to be created before memory allocation\n");
+	return -1;
+      }
+      if(++i > argc){
+	printf("%s%s%s", "Incorrect argument in main, expected string (temporary file name) after command: ", argv[i - 1], "\n");
+	return -1;
+      }
+      char tmpFilename[128];
+      if(sscanf(argv[i], "%s", tmpFilename) == EOF){
+	printf("Incorrect argument after \"allocate_memory\", expected string (temporary file name)\n");
+	return -1;
+      }
+      int index = allocateBlock(array, tmpFilename);
+      if(index != -1) printf("%s%d%s", "Block of memory allocated at index: ", index, "\n");
+      else return -1;
+    }
+    else if(strcmp(argv[i], "delete_block") == 0){
+      printf("Deleting block from array\n");
+      if(array == NULL){
+	printf("Array has to be created before deleting blocks\n");
+	return -1;
+      }
+      if(++i > argc){
+	printf("%s%s%s", "Incorrect argument in main, expected int after command: ", argv[i - 1], "\n");
+	return -1;
+      }
+      int blockIndex;
+      sscanf(argv[i], "%d", &blockIndex);
+      if(blockIndex < 0 || blockIndex > array->size - 1){
+	printf("Deleting block index out of array bounds\n");
+	return -1;
+      }
+      deleteBlock(array, blockIndex);
+    }
   }
     
   return 0;
