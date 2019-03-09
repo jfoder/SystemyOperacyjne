@@ -87,7 +87,7 @@ int main(int argc, char* argv[]){
 	return -1;
       }
       if(++i  >= argc){
-	printf("%s%s%s", "Incorrect argument in main, expected string (temporary file name) after: ", argv[i], "\n");
+	printf("%s%s%s", "Incorrect argument in main, expected string (temporary file name) after: ", argv[i - 1], "\n");
 	return -1;
       }
       char tmpFilename[128];

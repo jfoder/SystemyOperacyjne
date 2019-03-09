@@ -1,0 +1,50 @@
+Large_data_search:
+Real time: 0.514699
+System time: 0.340000
+User time: 0.100000
+
+Large_data_save:
+Real time: 0.032875
+System time: 0.020000
+User time: 0.000000
+
+Large_data_delete:
+Real time: 0.027484
+System time: 0.010000
+User time: 0.000000
+
+Medium_data_search:
+Real time: 0.004747
+System time: 0.000000
+User time: 0.000000
+
+Medium_data_save:
+Real time: 0.000037
+System time: 0.000000
+User time: 0.000000
+
+Medium_data_delete:
+Real time: 0.000033
+System time: 0.000000
+User time: 0.000000
+
+Small_data_search:
+Real time: 0.005089
+System time: 0.000000
+User time: 0.000000
+
+Small_data_save:
+Real time: 0.000048
+System time: 0.000000
+User time: 0.000000
+
+Small_data_delete:
+Real time: 0.000036
+System time: 0.000000
+User time: 0.000000
+
+Allocating_and_deleting_blocks:
+Real time: 0.349884
+System time: 0.240000
+User time: 0.020000
+
