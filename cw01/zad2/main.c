@@ -18,6 +18,8 @@ int main(int argc, char* argv[]){
   realTime.tv_sec = 0;
   realTime.tv_nsec = 0;
   struct tms usTime;
+  usTime.tms_utime = 0;
+  usTime.tms_stime = 0;
   usTime.tms_cutime = 0;
   usTime.tms_cstime = 0;
   char resultsFilename[128];
@@ -100,6 +102,8 @@ int main(int argc, char* argv[]){
       times(&usTimeEnd);
       realTime.tv_sec += realTimeEnd.tv_sec - realTimeBegin.tv_sec;
       realTime.tv_nsec += realTimeEnd.tv_nsec - realTimeBegin.tv_nsec;
+      usTime.tms_utime += usTimeEnd.tms_utime - usTimeBegin.tms_utime;
+      usTime.tms_stime += usTimeEnd.tms_stime - usTimeBegin.tms_stime;
       usTime.tms_cutime += usTimeEnd.tms_cutime - usTimeBegin.tms_cutime;
       usTime.tms_cstime += usTimeEnd.tms_cstime - usTimeBegin.tms_cstime;
     }
@@ -131,9 +135,10 @@ int main(int argc, char* argv[]){
       times(&usTimeEnd);
       realTime.tv_sec += realTimeEnd.tv_sec - realTimeBegin.tv_sec;
       realTime.tv_nsec += realTimeEnd.tv_nsec - realTimeBegin.tv_nsec;
+      usTime.tms_utime += usTimeEnd.tms_utime - usTimeBegin.tms_utime;
+      usTime.tms_stime += usTimeEnd.tms_stime - usTimeBegin.tms_stime;
       usTime.tms_cutime += usTimeEnd.tms_cutime - usTimeBegin.tms_cutime;
       usTime.tms_cstime += usTimeEnd.tms_cstime - usTimeBegin.tms_cstime;
-      printf("%s%d %d%s", "Time: ", (int)usTimeEnd.tms_stime, (int)usTimeEnd.tms_utime, "\n");
     }
     else if(strcmp(argv[i], "delete_block") == 0){
       struct timespec realTimeBegin;
@@ -162,6 +167,8 @@ int main(int argc, char* argv[]){
       times(&usTimeEnd);
       realTime.tv_sec += realTimeEnd.tv_sec - realTimeBegin.tv_sec;
       realTime.tv_nsec += realTimeEnd.tv_nsec - realTimeBegin.tv_nsec;
+      usTime.tms_utime += usTimeEnd.tms_utime - usTimeBegin.tms_utime;
+      usTime.tms_stime += usTimeEnd.tms_stime - usTimeBegin.tms_stime;
       usTime.tms_cutime += usTimeEnd.tms_cutime - usTimeBegin.tms_cutime;
       usTime.tms_cstime += usTimeEnd.tms_cstime - usTimeBegin.tms_cstime;
     }
@@ -171,8 +178,8 @@ int main(int argc, char* argv[]){
     fprintf(resultsFile, "%s:\n", label);
     fprintf(resultsFile, "%s%f%s", "Real time: ", (float)(realTime.tv_sec) + (realTime.tv_nsec)/1000000000.0, "\n");
     int clockTicks = sysconf(_SC_CLK_TCK);
-    fprintf(resultsFile, "%s%f%s", "System time: ", usTime.tms_cstime/(float)clockTicks, "\n");
-    fprintf(resultsFile, "%s%f%s", "User time: ", usTime.tms_cutime/(float)clockTicks, "\n\n");
+    fprintf(resultsFile, "%s%f%s", "System time: ", usTime.tms_cstime/(float)clockTicks + usTime.tms_stime/(float)clockTicks, "\n");
+    fprintf(resultsFile, "%s%f%s", "User time: ", usTime.tms_cutime/(float)clockTicks + usTime.tms_utime/(float)clockTicks, "\n\n");
   }
   return 0;
 }
