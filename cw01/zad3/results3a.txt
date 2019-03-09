@@ -1,0 +1,45 @@
+STATIC_LARGE_DATA:
+Real time: 4.448707
+System time: 1.390000
+User time: 0.520000
+
+STATIC_MEDIUM_DATA:
+Real time: 1.531373
+System time: 0.490000
+User time: 0.210000
+
+STATIC_SMALL_DATA:
+Real time: 0.022949
+System time: 0.000000
+User time: 0.000000
+
+SHARED_LARGE_DATA:
+Real time: 5.040206
+System time: 1.380000
+User time: 0.650000
+
+SHARED_MEDIUM_DATA:
+Real time: 1.988449
+System time: 0.550000
+User time: 0.240000
+
+SHARED_SMALL_DATA:
+Real time: 0.014512
+System time: 0.000000
+User time: 0.000000
+
+DYNAMIC_LARGE_DATA:
+Real time: 4.163737
+System time: 1.230000
+User time: 0.600000
+
+DYNAMIC_MEDIUM_DATA:
+Real time: 1.900382
+System time: 0.500000
+User time: 0.250000
+
+DYNAMIC_SMALL_DATA:
+Real time: 0.020649
+System time: 0.000000
+User time: 0.000000
+
