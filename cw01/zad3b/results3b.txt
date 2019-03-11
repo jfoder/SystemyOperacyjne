@@ -1,0 +1,135 @@
+O0_STATIC_LARGE_DATA:
+Real time: 1.546551
+System time: 0.810000
+User time: 0.380000
+
+O0_STATIC_MEDIUM_DATA:
+Real time: 0.546183
+System time: 0.310000
+User time: 0.150000
+
+O0_STATIC_SMALL_DATA:
+Real time: 0.008201
+System time: 0.000000
+User time: 0.000000
+
+O0_SHARED_LARGE_DATA:
+Real time: 1.629496
+System time: 0.840000
+User time: 0.430000
+
+O0_SHARED_MEDIUM_DATA:
+Real time: 0.582586
+System time: 0.330000
+User time: 0.160000
+
+O0_SHARED_SMALL_DATA:
+Real time: 0.006626
+System time: 0.000000
+User time: 0.000000
+
+O0_DYNAMIC_LARGE_DATA:
+Real time: 1.604010
+System time: 0.820000
+User time: 0.400000
+
+O0_DYNAMIC_MEDIUM_DATA:
+Real time: 0.552934
+System time: 0.300000
+User time: 0.160000
+
+O0_DYNAMIC_SMALL_DATA:
+Real time: 0.006106
+System time: 0.000000
+User time: 0.000000
+
+O3_STATIC_LARGE_DATA:
+Real time: 1.617290
+System time: 0.830000
+User time: 0.440000
+
+O3_STATIC_MEDIUM_DATA:
+Real time: 0.556200
+System time: 0.320000
+User time: 0.160000
+
+O3_STATIC_SMALL_DATA:
+Real time: 0.008693
+System time: 0.000000
+User time: 0.000000
+
+O3_SHARED_LARGE_DATA:
+Real time: 1.636044
+System time: 0.830000
+User time: 0.430000
+
+O3_SHARED_MEDIUM_DATA:
+Real time: 0.555085
+System time: 0.330000
+User time: 0.150000
+
+O3_SHARED_SMALL_DATA:
+Real time: 0.006353
+System time: 0.000000
+User time: 0.000000
+
+O3_DYNAMIC_LARGE_DATA:
+Real time: 1.593896
+System time: 0.810000
+User time: 0.420000
+
+O3_DYNAMIC_MEDIUM_DATA:
+Real time: 0.561667
+System time: 0.330000
+User time: 0.150000
+
+O3_DYNAMIC_SMALL_DATA:
+Real time: 0.005871
+System time: 0.000000
+User time: 0.000000
+
+Os_STATIC_LARGE_DATA:
+Real time: 1.783041
+System time: 0.860000
+User time: 0.450000
+
+Os_STATIC_MEDIUM_DATA:
+Real time: 0.550635
+System time: 0.320000
+User time: 0.150000
+
+Os_STATIC_SMALL_DATA:
+Real time: 0.006161
+System time: 0.000000
+User time: 0.000000
+
+Os_SHARED_LARGE_DATA:
+Real time: 1.645764
+System time: 0.810000
+User time: 0.450000
+
+Os_SHARED_MEDIUM_DATA:
+Real time: 0.529606
+System time: 0.310000
+User time: 0.160000
+
+Os_SHARED_SMALL_DATA:
+Real time: 0.009460
+System time: 0.000000
+User time: 0.000000
+
+Os_DYNAMIC_LARGE_DATA:
+Real time: 1.635164
+System time: 0.810000
+User time: 0.420000
+
+Os_DYNAMIC_MEDIUM_DATA:
+Real time: 0.597213
+System time: 0.320000
+User time: 0.160000
+
+Os_DYNAMIC_SMALL_DATA:
+Real time: 0.016471
+System time: 0.000000
+User time: 0.000000
+

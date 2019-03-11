@@ -10,7 +10,7 @@
 
 
 int main(int argc, char* argv[]){
-  struct blocksArray* array;
+  struct blocksArray* array = NULL;
   int parametersPassed = 0;
   char directory[128];
   char filename[128];
@@ -180,6 +180,12 @@ int main(int argc, char* argv[]){
     int clockTicks = sysconf(_SC_CLK_TCK);
     fprintf(resultsFile, "%s%f%s", "System time: ", usTime.tms_cstime/(float)clockTicks + usTime.tms_stime/(float)clockTicks, "\n");
     fprintf(resultsFile, "%s%f%s", "User time: ", usTime.tms_cutime/(float)clockTicks + usTime.tms_utime/(float)clockTicks, "\n\n");
+  }
+  if(array != NULL){
+    for(int i = 0; i < array->size; i++){
+      free(array->array[i]);
+    }
+    free(array->array);
   }
   return 0;
 }

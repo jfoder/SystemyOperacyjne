@@ -1,45 +1,46 @@
 STATIC_LARGE_DATA:
-Real time: 4.448707
-System time: 1.390000
-User time: 0.520000
+Real time: 1.573858
+System time: 0.790000
+User time: 0.410000
 
 STATIC_MEDIUM_DATA:
-Real time: 1.531373
-System time: 0.490000
-User time: 0.210000
+Real time: 0.547088
+System time: 0.310000
+User time: 0.140000
 
 STATIC_SMALL_DATA:
-Real time: 0.022949
+Real time: 0.008828
 System time: 0.000000
 User time: 0.000000
 
 SHARED_LARGE_DATA:
-Real time: 5.040206
-System time: 1.380000
-User time: 0.650000
+Real time: 1.609710
+System time: 0.830000
+User time: 0.410000
 
 SHARED_MEDIUM_DATA:
-Real time: 1.988449
-System time: 0.550000
-User time: 0.240000
+Real time: 0.565503
+System time: 0.310000
+User time: 0.160000
 
 SHARED_SMALL_DATA:
-Real time: 0.014512
+Real time: 0.013316
 System time: 0.000000
 User time: 0.000000
 
 DYNAMIC_LARGE_DATA:
-Real time: 4.163737
-System time: 1.230000
-User time: 0.600000
+Real time: 1.816522
+System time: 0.860000
+User time: 0.420000
 
 DYNAMIC_MEDIUM_DATA:
-Real time: 1.900382
-System time: 0.500000
-User time: 0.250000
+Real time: 1.308322
+System time: 0.460000
+User time: 0.220000
 
 DYNAMIC_SMALL_DATA:
-Real time: 0.020649
+Real time: 0.008488
 System time: 0.000000
 User time: 0.000000
 
+Zgodnie z przewidywaniami, kod zaladowany statycznie do programu wykonal sie najszybciej, natomiast kod korzystajacy z biblioteki ladowanej dynamicznie potrzebowal wiecej czasu na wykonanie.
