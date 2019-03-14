@@ -69,7 +69,7 @@ void sortLib(char* filename, unsigned int bytes){
 
 
 void sortSys(char* filename, unsigned int bytes){
-    unsigned int file = open(filename, O_RDWR);
+    int file = open(filename, O_RDWR);
     if(file < 0){
         printf("Cannot find file: %s\n", filename);
         return;
@@ -110,7 +110,7 @@ void sortSys(char* filename, unsigned int bytes){
 }
 
 
-void copyLib(char* source, char* destination, unsigned int bytes){
+void copyLib(char* source, char* destination, unsigned int bytes, int records){
     FILE* sourceFile = fopen(source, "rb");
     FILE* destinationFile = fopen(destination, "wb");
     if(sourceFile == NULL){
@@ -123,12 +123,37 @@ void copyLib(char* source, char* destination, unsigned int bytes){
     }
     fseek(sourceFile, 0, SEEK_SET);
     fseek(destinationFile, 0, SEEK_SET);
-    unsigned char* buffer = malloc(bytes * sizeof(char));
-    while(fread(buffer, sizeof(char), bytes, sourceFile) > 0){
+    int currentRecord = 0;
+    unsigned char* buffer = (unsigned char*)malloc(bytes * sizeof(char));
+    while(fread(buffer, sizeof(char), bytes, sourceFile) > 0 && currentRecord < records){
         fwrite(buffer, sizeof(char), bytes, destinationFile);
+        currentRecord++;
     }
     fclose(sourceFile);
     fclose(destinationFile);
+    free(buffer);
+}
+
+
+void copySys(char* source, char* destination, unsigned int bytes, unsigned int records){
+    int sourceFile = open(source, O_RDONLY);
+    int destinationFile = open(destination, O_WRONLY|O_CREAT, S_IRUSR|S_IWUSR);
+    if(sourceFile < 0){
+        printf("Cannot find source file to copy\n");
+        return;
+    }
+    if(destinationFile < 0){
+        printf("Cannot find destination file to copy\n");
+        return;
+    }
+    unsigned char* buffer = (unsigned char*)malloc(bytes * sizeof(char));
+    int readBytes, currentRecord = 0;
+    while((readBytes = read(sourceFile, buffer, bytes)) > 0 && currentRecord < records){
+        write(destinationFile, buffer, readBytes);
+    }
+    close(sourceFile);
+    close(destinationFile);
+    free(buffer);
 }
 
 
@@ -153,7 +178,7 @@ int main(int argc, char* argv[]){
     printFile("randoms", bytes);
     sortSys("randoms", bytes);
     printFile("randoms", bytes);
-    copyLib("randoms", "randomsCopy", 4);
+    copySys("randoms", "randomsCopySys", 4, 500000);
     return 0;
 }
   
