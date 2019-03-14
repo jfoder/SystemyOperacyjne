@@ -110,6 +110,28 @@ void sortSys(char* filename, unsigned int bytes){
 }
 
 
+void copyLib(char* source, char* destination, unsigned int bytes){
+    FILE* sourceFile = fopen(source, "rb");
+    FILE* destinationFile = fopen(destination, "wb");
+    if(sourceFile == NULL){
+        printf("Cannot find source file to copy\n");
+        return;
+    }
+    if(destinationFile == NULL){
+        printf("Cannot find destination file to copy\n");
+        return;
+    }
+    fseek(sourceFile, 0, SEEK_SET);
+    fseek(destinationFile, 0, SEEK_SET);
+    unsigned char* buffer = malloc(bytes * sizeof(char));
+    while(fread(buffer, sizeof(char), bytes, sourceFile) > 0){
+        fwrite(buffer, sizeof(char), bytes, destinationFile);
+    }
+    fclose(sourceFile);
+    fclose(destinationFile);
+}
+
+
 void generate(char* filename, unsigned int count, unsigned int bytes){
     FILE* randomBytes = fopen(filename, "w");
     unsigned char* toSave = (unsigned char*)malloc(bytes * sizeof(char));
@@ -131,6 +153,7 @@ int main(int argc, char* argv[]){
     printFile("randoms", bytes);
     sortSys("randoms", bytes);
     printFile("randoms", bytes);
+    copyLib("randoms", "randomsCopy", 4);
     return 0;
 }
   
