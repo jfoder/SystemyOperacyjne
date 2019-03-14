@@ -1,0 +1,466 @@
+SORT_SYS_LARGE_1_BYTE:
+System time: 11.030000
+User time: 3.140000
+
+SORT_LIB_LARGE_1_BYTE:
+System time: 0.030000
+User time: 0.420000
+
+SORT_SYS_SMALL_1_BYTE:
+System time: 2.630000
+User time: 0.850000
+
+SORT_LIB_SMALL_1_BYTE:
+System time: 0.040000
+User time: 0.420000
+
+SORT_SYS_LARGE_1_BYTE:
+System time: 10.820000
+User time: 3.250000
+
+SORT_LIB_LARGE_1_BYTE:
+System time: 0.040000
+User time: 0.450000
+
+SORT_SYS_SMALL_1_BYTE:
+System time: 2.620000
+User time: 0.850000
+
+SORT_LIB_SMALL_1_BYTE:
+System time: 0.030000
+User time: 0.430000
+
+COPY_SYS_LARGE_1_BYTE:
+System time: 16.540001
+User time: 2.020000
+
+COPY_LIB_LARGE_1_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+COPY_SYS_SMALL_1_BYTE:
+System time: 2.580000
+User time: 0.430000
+
+COPY_LIB_SMALL_1_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+SORT_SYS_LARGE_2_BYTE:
+System time: 10.750000
+User time: 3.500000
+
+SORT_LIB_LARGE_2_BYTE:
+System time: 0.060000
+User time: 0.410000
+
+SORT_SYS_SMALL_2_BYTE:
+System time: 2.600000
+User time: 0.810000
+
+SORT_LIB_SMALL_2_BYTE:
+System time: 0.040000
+User time: 0.410000
+
+COPY_SYS_LARGE_2_BYTE:
+System time: 8.730000
+User time: 1.070000
+
+COPY_LIB_LARGE_2_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+COPY_SYS_SMALL_2_BYTE:
+System time: 1.500000
+User time: 0.200000
+
+COPY_LIB_SMALL_2_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+SORT_SYS_LARGE_4_BYTE:
+System time: 11.530000
+User time: 3.470000
+
+SORT_LIB_LARGE_4_BYTE:
+System time: 0.080000
+User time: 0.450000
+
+SORT_SYS_SMALL_4_BYTE:
+System time: 2.850000
+User time: 0.900000
+
+SORT_LIB_SMALL_4_BYTE:
+System time: 0.050000
+User time: 0.450000
+
+COPY_SYS_LARGE_4_BYTE:
+System time: 3.570000
+User time: 0.410000
+
+COPY_LIB_LARGE_4_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+COPY_SYS_SMALL_4_BYTE:
+System time: 0.770000
+User time: 0.110000
+
+COPY_LIB_SMALL_4_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+SORT_SYS_LARGE_8_BYTE:
+System time: 11.050000
+User time: 3.210000
+
+SORT_LIB_LARGE_8_BYTE:
+System time: 0.070000
+User time: 0.430000
+
+SORT_SYS_SMALL_8_BYTE:
+System time: 2.680000
+User time: 0.830000
+
+SORT_LIB_SMALL_8_BYTE:
+System time: 0.070000
+User time: 0.440000
+
+COPY_SYS_LARGE_8_BYTE:
+System time: 1.750000
+User time: 0.190000
+
+COPY_LIB_LARGE_8_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+COPY_SYS_SMALL_8_BYTE:
+System time: 0.390000
+User time: 0.050000
+
+COPY_LIB_SMALL_8_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+SORT_SYS_LARGE_16_BYTE:
+System time: 11.140000
+User time: 3.440000
+
+SORT_LIB_LARGE_16_BYTE:
+System time: 0.130000
+User time: 0.440000
+
+SORT_SYS_SMALL_16_BYTE:
+System time: 2.830000
+User time: 0.840000
+
+SORT_LIB_SMALL_16_BYTE:
+System time: 0.110000
+User time: 0.440000
+
+COPY_SYS_LARGE_16_BYTE:
+System time: 0.860000
+User time: 0.090000
+
+COPY_LIB_LARGE_16_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+COPY_SYS_SMALL_16_BYTE:
+System time: 0.260000
+User time: 0.030000
+
+COPY_LIB_SMALL_16_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+SORT_SYS_LARGE_32_BYTE:
+System time: 11.970000
+User time: 3.420000
+
+SORT_LIB_LARGE_32_BYTE:
+System time: 0.170000
+User time: 0.480000
+
+SORT_SYS_SMALL_32_BYTE:
+System time: 2.790000
+User time: 0.790000
+
+SORT_LIB_SMALL_32_BYTE:
+System time: 0.170000
+User time: 0.470000
+
+COPY_SYS_LARGE_32_BYTE:
+System time: 0.550000
+User time: 0.050000
+
+COPY_LIB_LARGE_32_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+COPY_SYS_SMALL_32_BYTE:
+System time: 0.200000
+User time: 0.030000
+
+COPY_LIB_SMALL_32_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+SORT_SYS_LARGE_64_BYTE:
+System time: 8.900000
+User time: 2.560000
+
+SORT_LIB_LARGE_64_BYTE:
+System time: 0.270000
+User time: 0.380000
+
+SORT_SYS_SMALL_64_BYTE:
+System time: 2.150000
+User time: 0.610000
+
+SORT_LIB_SMALL_64_BYTE:
+System time: 0.240000
+User time: 0.410000
+
+COPY_SYS_LARGE_64_BYTE:
+System time: 0.360000
+User time: 0.030000
+
+COPY_LIB_LARGE_64_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+COPY_SYS_SMALL_64_BYTE:
+System time: 0.120000
+User time: 0.020000
+
+COPY_LIB_SMALL_64_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+SORT_SYS_LARGE_128_BYTE:
+System time: 7.580000
+User time: 2.080000
+
+SORT_LIB_LARGE_128_BYTE:
+System time: 0.410000
+User time: 0.420000
+
+SORT_SYS_SMALL_128_BYTE:
+System time: 1.970000
+User time: 0.530000
+
+SORT_LIB_SMALL_128_BYTE:
+System time: 0.400000
+User time: 0.430000
+
+COPY_SYS_LARGE_128_BYTE:
+System time: 0.180000
+User time: 0.020000
+
+COPY_LIB_LARGE_128_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+COPY_SYS_SMALL_128_BYTE:
+System time: 0.070000
+User time: 0.010000
+
+COPY_LIB_SMALL_128_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+SORT_SYS_LARGE_256_BYTE:
+System time: 6.620000
+User time: 1.950000
+
+SORT_LIB_LARGE_256_BYTE:
+System time: 0.680000
+User time: 0.470000
+
+SORT_SYS_SMALL_256_BYTE:
+System time: 1.660000
+User time: 0.490000
+
+SORT_LIB_SMALL_256_BYTE:
+System time: 0.640000
+User time: 0.450000
+
+COPY_SYS_LARGE_256_BYTE:
+System time: 0.110000
+User time: 0.010000
+
+COPY_LIB_LARGE_256_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+COPY_SYS_SMALL_256_BYTE:
+System time: 0.030000
+User time: 0.000000
+
+COPY_LIB_SMALL_256_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+SORT_SYS_LARGE_512_BYTE:
+System time: 6.300000
+User time: 1.740000
+
+SORT_LIB_LARGE_512_BYTE:
+System time: 1.580000
+User time: 2.720000
+
+SORT_SYS_SMALL_512_BYTE:
+System time: 1.600000
+User time: 0.440000
+
+SORT_LIB_SMALL_512_BYTE:
+System time: 1.440000
+User time: 2.770000
+
+COPY_SYS_LARGE_512_BYTE:
+System time: 0.070000
+User time: 0.000000
+
+COPY_LIB_LARGE_512_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+COPY_SYS_SMALL_512_BYTE:
+System time: 0.020000
+User time: 0.000000
+
+COPY_LIB_SMALL_512_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+SORT_SYS_LARGE_1024_BYTE:
+System time: 6.300000
+User time: 1.520000
+
+SORT_LIB_LARGE_1024_BYTE:
+System time: 2.740000
+User time: 2.390000
+
+SORT_SYS_SMALL_1024_BYTE:
+System time: 1.270000
+User time: 0.320000
+
+SORT_LIB_SMALL_1024_BYTE:
+System time: 2.800000
+User time: 2.320000
+
+COPY_SYS_LARGE_1024_BYTE:
+System time: 0.030000
+User time: 0.000000
+
+COPY_LIB_LARGE_1024_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+COPY_SYS_SMALL_1024_BYTE:
+System time: 0.010000
+User time: 0.000000
+
+COPY_LIB_SMALL_1024_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+SORT_SYS_LARGE_2048_BYTE:
+System time: 6.090000
+User time: 1.250000
+
+SORT_LIB_LARGE_2048_BYTE:
+System time: 4.690000
+User time: 2.100000
+
+SORT_SYS_SMALL_2048_BYTE:
+System time: 1.300000
+User time: 0.230000
+
+SORT_LIB_SMALL_2048_BYTE:
+System time: 4.410000
+User time: 2.310000
+
+COPY_SYS_LARGE_2048_BYTE:
+System time: 0.030000
+User time: 0.000000
+
+COPY_LIB_LARGE_2048_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+COPY_SYS_SMALL_2048_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+COPY_LIB_SMALL_2048_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+SORT_SYS_LARGE_4096_BYTE:
+System time: 8.140000
+User time: 1.080000
+
+SORT_LIB_LARGE_4096_BYTE:
+System time: 8.310000
+User time: 1.260000
+
+SORT_SYS_SMALL_4096_BYTE:
+System time: 1.480000
+User time: 0.200000
+
+SORT_LIB_SMALL_4096_BYTE:
+System time: 8.350000
+User time: 1.270000
+
+COPY_SYS_LARGE_4096_BYTE:
+System time: 0.020000
+User time: 0.000000
+
+COPY_LIB_LARGE_4096_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+COPY_SYS_SMALL_4096_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+COPY_LIB_SMALL_4096_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+SORT_SYS_LARGE_8192_BYTE:
+System time: 11.160000
+User time: 0.860000
+
+SORT_LIB_LARGE_8192_BYTE:
+System time: 11.280000
+User time: 1.010000
+
+SORT_SYS_SMALL_8192_BYTE:
+System time: 2.570000
+User time: 0.200000
+
+SORT_LIB_SMALL_8192_BYTE:
+System time: 11.230000
+User time: 1.050000
+
+COPY_SYS_LARGE_8192_BYTE:
+System time: 0.020000
+User time: 0.000000
+
+COPY_LIB_LARGE_8192_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+COPY_SYS_SMALL_8192_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+COPY_LIB_SMALL_8192_BYTE:
+System time: 0.000000
+User time: 0.000000
+
+Dla niewielkich rozmiarow rekordow funkcje biblioteczne dziajala znacznie szybciej od systemowych, jednak ta przewaga maleje wraz ze wzrostem rozmiaru rekordu. Dla duzych rekordow funkcje systemowe wykonuja sie szybciej.
+
