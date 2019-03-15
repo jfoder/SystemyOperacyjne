@@ -30,7 +30,7 @@ void printFiles(char* directoryName, int compareOption, time_t time){
         strcpy(path, cwd);
         strcat(path, "/");
         strcat(path, d->d_name);
-        lstat(path, &buf);
+        stat(path, &buf);
         if(strcmp(d->d_name, "..") == 0 || strcmp(d->d_name, ".") == 0) continue;
         if(compareOption == 0){
             char date1[20];
@@ -77,8 +77,8 @@ void printFiles(char* directoryName, int compareOption, time_t time){
         strcpy(path, cwd);
         strcat(path, "/");
         strcat(path, d->d_name);
-        lstat(path, &buf);
-        if(strcmp(d->d_name, "..") != 0 && strcmp(d->d_name, ".") != 0 && S_ISDIR(buf.st_mode)){
+        stat(path, &buf);
+        if(strcmp(d->d_name, "..") != 0 && strcmp(d->d_name, ".") != 0 && S_ISDIR(buf.st_mode) == 1){
             printFiles(path, compareOption, time);
         }
     }
