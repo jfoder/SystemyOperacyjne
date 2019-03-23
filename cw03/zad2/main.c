@@ -197,6 +197,10 @@ int main(int argc, char* argv[]){
     int i = 0;
 
     while(fscanf(list,"%s %d", path, &seconds) > 0) {
+        if(seconds <= 0){
+            printf("Incorrect seconds number: %s %d\n", path, seconds);
+            return -1;
+        }
         child_pid[i++] = fork();
         if(child_pid[i - 1] == 0) {
             if(mode == 0) monitor_file(path, archives_directory, seconds, total_time);
