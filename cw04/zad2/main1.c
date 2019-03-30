@@ -257,6 +257,9 @@ int main(int argc, char* argv[]){
             if(mode == 0) monitor_file(path, archives_directory, seconds);
             else if(mode == 1) monitor_file_cp(path, archives_directory, seconds);
         }
+        else{
+            printf("Process with PID: %d is monitoring file: %s\n", child_pid[i - 1], path);
+        }
     }
 
     int end = 0;
