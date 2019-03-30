@@ -5,6 +5,8 @@
 #include <time.h>
 
 sig_atomic_t stopped = 0;
+pid_t child_process;
+int has_child_process = 0;
 
 void catchSIGTSTP(int signum){
     printf("\rPress CTRL+Z to continue or CTRL+C to terminate process\n");
@@ -32,15 +34,18 @@ int main(int argc, char* argv[]) {
     action.sa_handler = catchSIGTSTP;
     sigaction(SIGTSTP, &action, NULL);
     signal(SIGINT, catchSIGINT);
-
-    time_t t;
-    struct tm* tm;
     while(1) {
-        if(stopped == 1) continue;
-        time(&t);
-        tm = localtime(&t);
-        printf(asctime(tm));
-        sleep(1);
+        if(stopped == 0 && has_child_process == 0) {
+            has_child_process = 1;
+            child_process = fork();
+            if (child_process == 0) {
+                execlp("./date.sh", "./date.sh", NULL);
+            }
+        }
+        else if(stopped == 1){
+            kill(child_process, SIGKILL);
+            has_child_process = 0;
+        }
     }
     return 0;
 }
